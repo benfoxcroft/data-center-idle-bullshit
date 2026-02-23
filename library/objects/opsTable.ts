@@ -1,0 +1,28 @@
+import { OpsEntry } from "../types/types";
+
+export const OPS_TABLE: OpsEntry[] = [
+  { speed: 0.1, cost: 0, label: "0.1 Hz" },
+  { speed: 0.2, cost: 5, label: "0.2 Hz" },
+  { speed: 0.5, cost: 12, label: "0.5 Hz" },
+  { speed: 1, cost: 50, label: "1 Hz" },
+  { speed: 2, cost: 6769, label: "2 Hz" },
+  { speed: 5, cost: 1e5, label: "5 Hz" },
+  { speed: 10, cost: 1e7, label: "10 Hz" },
+  { speed: 25, cost: 2e9, label: "25 Hz" },
+  { speed: 50, cost: 3e8, label: "50 Hz" },
+  { speed: 100, cost: 4e9, label: "100 Hz" },
+  { speed: 250, cost: 5e10, label: "250 Hz" },
+  { speed: 500, cost: 1e11, label: "500 Hz" },
+  { speed: 1000, cost: 2e12, label: "1 KHz" },
+  { speed: 2500, cost: 3e13, label: "2.5 KHz" },
+  { speed: 5000, cost: 4e14, label: "5 KHz" },
+  { speed: 10000, cost: 5e16, label: "10 KHz" },
+  { speed: 25000, cost: 6e17, label: "25 KHz" },
+  { speed: 100000, cost: 7e18, label: "0.1 MHz" },
+  { speed: 250000, cost: 8e19, label: "0.25 MHz" },
+  { speed: 500000, cost: 9e20, label: "0.5 MHz" },
+  { speed: 1000000, cost: 1e22, label: "1 MHz" },
+  { speed: 2500000, cost: 2e23, label: "2.5 MHz" },
+  { speed: 5000000, cost: 3e24, label: "5 MHz" },
+  { speed: 10000000, cost: 4e25, label: "10 MHz" },
+];
