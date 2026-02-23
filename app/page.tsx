@@ -14,6 +14,7 @@ import UpgradePanel from "@/library/components/ui/upgradePanel";
 import ContractBoard from "@/library/components/ui/contractBoard";
 import SplashScreen from "@/library/components/ui/splash";
 import StatsStrip from "@/library/components/ui/statsStrip";
+import { splashMessages } from "@/library/objects/splash";
 
 // ─── Main App ─────────────────────────────────────────────────────────────────
 export default function App() {
@@ -55,10 +56,12 @@ export default function App() {
       setBootLines((prev) => [...prev, lines[i]]);
       i++;
       if (i >= lines.length) {
+        const index = Math.floor(utilities.randRange(0,splashMessages.length))
+        setBootLines([splashMessages[index]])
         clearInterval(id);
-        setTimeout(() => setBoot(false), 600);
+        setTimeout(() => setBoot(false), 500);
       }
-    }, 200);
+    }, 666);
     return () => clearInterval(id);
   }, []);
 
